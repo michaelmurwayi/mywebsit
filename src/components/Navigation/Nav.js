@@ -13,7 +13,7 @@ const Nav = () => {
                     <a href="#news">Blog</a>
                     <a href="#contact">Resume</a>
                     <a href="#about"><button className='btn btn-sm btn-primary'>Download Resume</button></a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <a className="icon" >
                         <i className="fa fa-bars"></i>
                     </a>
                 </div>
