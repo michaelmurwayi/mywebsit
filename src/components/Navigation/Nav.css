@@ -1,0 +1,46 @@
+
+.topnav {
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+  
+  /* Style the links inside the navigation bar */
+.topnav a {
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+font-weight: bolder;
+
+}
+.name{
+    color: black;
+    background-color: orange;
+    width: 30%;
+    text-align: center;
+}
+.name h2{
+    font-weight: 900;
+}
+.nav-items{
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+color: orange;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+color: orange;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+display: none;
+}
