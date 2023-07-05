@@ -52,6 +52,49 @@ const Resume = () =>{
         desciption: ' I mainly maintained the Ona Data API which was written in python .I fixed issues that   arose in production .I got extensivly introduced to Django Rest API and writing system tests.We heavily relied on git for version control and  i also went through some deployment techniques with docker.'
     },
     ]
+    
+    const skills = [
+        {
+            name:"Html",
+            level: "Proficient"
+        },
+        {
+            name:"CSS",
+            level: "Proficient"
+        },
+        {
+            name:"Python",
+            level: "Intermediate"
+        },
+        {
+            name:"JavaScript",
+            level: "Intermediate"
+        },
+        {
+            name:"Mysql",
+            level: "Intermediate"
+        },
+        {
+            name:"Docker",
+            level: "Intermediate"
+        },
+        {
+            name:"Git",
+            level: "Intermediate"
+        },
+        {
+            name:"MongoDB",
+            level: "Beginner"
+        },
+        {
+            name:"PHP",
+            level: "Beginner"
+        },
+        {
+            name:"Cyber Security",
+            level: "Beginner"
+        }
+    ]
 
     return (
         <div className='resume-main'>
@@ -108,10 +151,29 @@ const Resume = () =>{
                         ))}
                     </div>
                 </div>
-                <div className='col-md-6'>
+                <div className='col-md-6 mt-5'>
+                    <div className='col-md-12'>
 
+                    <h2>Skills</h2>
+                    <div class="card-container row">
+                        {skills.map((skill) =>(
+                            <div class="skill-card col-md-3">
+                                <div className='skill-header'>
+                                    <h6>{skill.name}</h6>
+                                </div>
+                                <div className='divider'></div>
+                                <div className='skill-content'>
+                                    <small>{skill.level}</small>
+                                </div>
+                        </div>
+                        ))}
+                    </div>
+                    </div>
+                    <div className='col-md-12 mt-5'>
+                        <h2> References </h2>
+                    </div>
                 </div>
-                </div>
+            </div>
             </div>
                 
         </div>
