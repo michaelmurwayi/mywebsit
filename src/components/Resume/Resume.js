@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from '../Navigation/Nav'
 import './Resume.css'
+import Info from './info/info'
 
 const Resume = () =>{
     return (
@@ -10,12 +11,9 @@ const Resume = () =>{
                 <video autoPlay muted loop className="video">
                     <source src="/videos/background.mp4" type="video/mp4"/>
                 </video>
-                
-                <div className="content">
-                    <h1>Your Website Title</h1>
-                    <p>Subtitle or tagline</p>
-                </div>
             </header>
+            <Info/>
+                
         </div>
     )
 }
