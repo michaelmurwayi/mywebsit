@@ -3,6 +3,8 @@ import Nav from '../Navigation/Nav'
 import './Resume.css'
 import Info from './info/info'
 import Exp from './experience/exp'
+import Skill from './skills/skill'
+import Reference  from './reference/reference'
 
 const Resume = () =>{
     const schoolExperience = [{
@@ -97,6 +99,25 @@ const Resume = () =>{
         }
     ]
 
+    const references = [
+        {
+            src: "/images/ona.png",
+            name: "Dickson Ukanga",
+            number: "0724242424",
+            role: "CTO",
+            email: "ukangadickson@gmail.com"
+        },
+        {
+            src: "/images/zalisha.jpeg",
+            name: "Steve Kombo",
+            number: "0724242424",
+            role: "CEO",
+            email: "skombo@gmail.com"
+
+        },
+
+    ]
+
     return (
         <div className='resume-main'>
             <Nav/>
@@ -119,48 +140,12 @@ const Resume = () =>{
                 <div className='row'>
 
                 <div className='col-md-6 mt-5'>
-                    {/* <div className='work'>
-                        <h2>Work Experience</h2>
-                        <hr/>
-                        {WorkExperience.map((experience)=>(
-
-                            <div className='exp mt-5'>
-                            <div className='exp-header'>
-                                <h6>{experience.company_name}</h6>
-                                <small>{experience.link}</small>
-                                <p>{experience.start} - {experience.end}</p>
-                            </div>
-                            <div className='exp-content'>
-                                <p>{experience.position}</p>
-                                <small> {experience.desciption}</small>
-                            </div>
-                        </div>
-                        ))}
-                    </div> */}
                     <Exp title="Work Experience" experience={WorkExperience}/>
                     <Exp title="School Experience" experience={schoolExperience}/>
                     </div>
                 <div className='col-md-6 mt-5'>
-                    <div className='col-md-12'>
-
-                    <h2>Skills</h2>
-                    <div class="card-container row">
-                        {skills.map((skill) =>(
-                            <div class="skill-card col-md-3">
-                                <div className='skill-header'>
-                                    <h6>{skill.name}</h6>
-                                </div>
-                                <div className='divider'></div>
-                                <div className='skill-content'>
-                                    <small>{skill.level}</small>
-                                </div>
-                        </div>
-                        ))}
-                    </div>
-                    </div>
-                    <div className='col-md-12 mt-5'>
-                        <h2> References </h2>
-                    </div>
+                    <Skill skills={skills}/>
+                    <Reference references={references}/>
                 </div>
             </div>
             </div>
