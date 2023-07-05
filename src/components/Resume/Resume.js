@@ -59,7 +59,7 @@ const Resume = () =>{
             <Info/>
             <div className='content row'>
                 <div className='col-md-12'>
-                    <h2>Personal Infomation</h2>
+                    <h2>Personal Profile</h2>
                     <p>
                     Hello, I'm Michael Murwayi, a passionate and dedicated software developer with a strong foundation in creating efficient, scalable, and user-friendly applications. With 6 years of experience in the field, I have a deep understanding of software development principles and a proven track record of delivering high-quality code.
                     My expertise lies in Python, allowing me to tackle complex challenges and build robust solutions. I thrive in collaborative environments, working closely with cross-functional teams to analyze requirements, design software architectures, and implement innovative solutions.
