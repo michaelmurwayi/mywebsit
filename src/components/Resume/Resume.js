@@ -2,6 +2,7 @@ import React from 'react'
 import Nav from '../Navigation/Nav'
 import './Resume.css'
 import Info from './info/info'
+import Exp from './experience/exp'
 
 const Resume = () =>{
     const schoolExperience = [{
@@ -118,7 +119,7 @@ const Resume = () =>{
                 <div className='row'>
 
                 <div className='col-md-6 mt-5'>
-                    <div className='work'>
+                    {/* <div className='work'>
                         <h2>Work Experience</h2>
                         <hr/>
                         {WorkExperience.map((experience)=>(
@@ -135,22 +136,10 @@ const Resume = () =>{
                             </div>
                         </div>
                         ))}
+                    </div> */}
+                    <Exp title="Work Experience" experience={WorkExperience}/>
+                    <Exp title="School Experience" experience={schoolExperience}/>
                     </div>
-                    <div className='school mt-5'>
-                    <h2>School Experience</h2>
-                        <hr/>
-                        {schoolExperience.map((experience)=>(
-
-                            <div className='exp mt-5'>
-                            <div className='exp-header'>
-                                <h6>{experience.school_name}</h6>
-                                <small>{experience.certification}</small>
-                                <p>{experience.start} - {experience.end}</p>
-                            </div>
-                        </div>
-                        ))}
-                    </div>
-                </div>
                 <div className='col-md-6 mt-5'>
                     <div className='col-md-12'>
 
