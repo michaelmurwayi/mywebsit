@@ -5,6 +5,7 @@ import Info from './info/info'
 import Exp from './experience/exp'
 import Skill from './skills/skill'
 import Reference  from './reference/reference'
+import Footer from '../Footer/footer'
 
 const Resume = () =>{
     const schoolExperience = [{
@@ -148,8 +149,8 @@ const Resume = () =>{
                     <Reference references={references}/>
                 </div>
             </div>
+            <Footer/>
             </div>
-                
         </div>
     )
 }
