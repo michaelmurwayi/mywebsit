@@ -6,7 +6,7 @@
     width: 700px;
     height: 300px;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.9);
 }
 .info-card-image{
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqKFcBaqXnEwbu0U8NoWfoqrtC7o4pzAAXTg&usqp=CAU');
@@ -19,7 +19,7 @@
     padding: 20px;
     /* background-color: grey; */
     height: inherit;
-    border-radius: 10px;
+    width: max-content;
 
 }
 
