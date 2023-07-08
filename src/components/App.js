@@ -4,6 +4,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 import Home from './Home/Home'
 import Resume from './Resume/Resume'
+import NotFound  from './NotFound';
 
 class App extends React.Component{
   render(){
@@ -13,6 +14,7 @@ class App extends React.Component{
           <Routes>
             <Route exact path='/' Component={Home}/>
             <Route exact path='resume' Component={Resume}/>
+            <Route Component={NotFound}/>
           </Routes>
         </BrowserRouter>
       </div>
