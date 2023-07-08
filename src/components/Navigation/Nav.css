@@ -1,6 +1,6 @@
 
 .topnav {
-    background-color: black;
+    background-color: rgb(10,28,52);
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -22,8 +22,10 @@ font-weight: bolder;
     width: 30%;
     text-align: center;
 }
-.name h2{
+.name h3{
     font-weight: 900;
+    position: relative;
+    top: 10px;
 }
 .nav-items{
     display: flex;
