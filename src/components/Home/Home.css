@@ -17,7 +17,7 @@ flex-direction: row;
 .col2{
     width: 70%;
     height: 100vh;
-    background-color: black;
+    background-color: rgb(10,28,52);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,6 +73,7 @@ flex-direction: row;
     animation: 
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
+    color: white;
   }
   
   /* The typing effect */
@@ -90,4 +91,8 @@ flex-direction: row;
   .info .bio{
     position: relative;
 
+  }
+
+  .bio span{
+    color: white;
   }

@@ -1,0 +1,84 @@
+
+  .resume-main{
+    background-color: rgb(10,28,52);
+  
+  }
+
+  .video-background {
+    position: relative;
+    height: 40vh;
+    overflow: hidden;
+  }
+  
+  .video {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .content{
+    position: relative;
+    color: wheat;
+    display: flex;
+    text-align: center;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    font-size: 17;  
+}
+
+.content h2 {
+  color : rgb(12,130,121);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.exp{
+  text-align: left;
+  box-shadow: 0 2px 5px rgb(0,0,0, 0.9);
+  border-radius: 25px 0px 25px 0px;
+  color: wheat;
+  
+}
+.exp-header{
+  margin: 15px;
+}
+
+.exp-header small{
+  color: rgb(112,173,71);
+}
+
+.exp-header p {
+  font-size: 12px;
+}
+.exp-content{
+  margin: 15px;
+}
+
+.divider {
+  height: 5px;
+  background-color: rgb(0,255,0, 0.6);
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgb(0,255,0, 0.6);
+  animation: glowing 2s ease-in-out infinite;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 10px rgb(0,255,0, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 20px rgb(0,255,0, 0.6), 0 0 40px rgb(0,255,0, 0.6), 0 0 80px rgb(0,255,0, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 10px rgb(0,255,0, 0.6);
+  }
+}
+
+
+
+
+
