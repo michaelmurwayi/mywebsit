@@ -1,28 +1,32 @@
-.header{
-    color: black;
-    text-align: center;
-    position: relative;
-    height: 50vh;
-    display: grid;
-    
+.not-found{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: hidden;
 }
-
-.header h1{
-    align-self: end;
+.image{
+    height: 100vh;
+    background-image: url("../../public/images/404.jpg");
+    background-position: right;
+    background-size: center;
+    background-repeat: no-repeat;
 }
-
-.back{
-    color: white;
-    text-align: center;
-    position: relative;
-    height: 50vh;
+.content-404{
     background-color: rgb(10,28,52);
-}
+    height: 100vh;
+    text-align: center;
+    color: white;
 
-.back p{
+}
+.text{
+    padding: 30vh;
+  }
+.text h2{
+    margin-top: 20px;
+}
+.text p {
     margin-top: 50px;
 }
-
-.back :hover{
+.text p:hover {
     color: orange;
 }
