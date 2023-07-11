@@ -14,7 +14,7 @@ class App extends React.Component{
           <Routes>
             <Route exact path='/' Component={Home}/>
             <Route exact path='resume' Component={Resume}/>
-            <Route Component={NotFound}/>
+            <Route exact path ='*' Component={NotFound}/>
           </Routes>
         </BrowserRouter>
       </div>
