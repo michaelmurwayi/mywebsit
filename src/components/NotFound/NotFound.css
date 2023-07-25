@@ -1,0 +1,32 @@
+.not-found{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: hidden;
+}
+.image{
+    height: 100vh;
+    background-image: url("../../public/images/404.jpg");
+    background-position: right;
+    background-size: center;
+    background-repeat: no-repeat;
+}
+.content-404{
+    background-color: rgb(10,28,52);
+    height: 100vh;
+    text-align: center;
+    color: white;
+
+}
+.text{
+    padding: 30vh;
+  }
+.text h2{
+    margin-top: 20px;
+}
+.text p {
+    margin-top: 50px;
+}
+.text p:hover {
+    color: orange;
+}
