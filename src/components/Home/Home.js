@@ -1,7 +1,6 @@
 import React from 'react';
 import './Home.css';
 import Nav from '../Navigation/Nav'
-import Footer from '../Footer/footer'
 
 
 const Home = () =>{
