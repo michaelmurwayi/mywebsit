@@ -1,0 +1,18 @@
+.header{
+    height: 70vh;
+    background-image: url("../../../public/images/construction.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 70vh;
+    background-position: center;
+}
+.warning{
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+
+
+.btn:hover{
+    background-color: orange;
+    color: black;
+}
