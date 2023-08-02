@@ -1,12 +1,12 @@
 import React from 'react'
 import './Nav.css'
+import { connect } from 'react-redux'
 
-const Nav = () => {
-
+const Nav = ({dev}) => {
     return (
         <div className='topnav'>
                 <div className='name'>
-                    <h3>Michael Murwayi</h3>
+                    <h3>{ dev }</h3>
                 </div>
                 <div className='nav-items'>
                     <a href="/" className="active">Home</a>
@@ -21,4 +21,11 @@ const Nav = () => {
     )
 }
 
-export default Nav;
+const mapStateToProps = (state) =>{
+    return {
+        dev: state.reducer.dev,
+        
+    }
+}
+
+export default connect(mapStateToProps)(Nav);
