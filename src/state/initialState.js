@@ -30,7 +30,7 @@ const initialState = {
         end: '2023 May',
         languages: ["Python", "Git", "Docker"],
         desciption: ' I mainly maintained the Ona Data API which was written in python .I fixed issues that   arose in production .I got extensivly introduced to Django Rest API and writing system tests.We heavily relied on git for version control and  i also went through some deployment techniques with docker.'
-    },
+    }
     ],
     schoolExperience: [{
         school_name: 'Meru University of Science and Technology',
@@ -93,7 +93,24 @@ const initialState = {
             level: "Beginner"
         }
     ],
-    references: [],
+    references: [
+        {
+            src: "/images/ona.png",
+            name: "Dickson Ukanga",
+            number: "0724242424",
+            role: "CTO",
+            email: "ukangadickson@gmail.com"
+        },
+        {
+            src: "/images/zalisha.jpeg",
+            name: "Steve Kombo",
+            number: "0724242424",
+            role: "CEO",
+            email: "skombo@gmail.com"
+
+        },
+
+    ],
     companyName: "huncho Inc"
 };
 
