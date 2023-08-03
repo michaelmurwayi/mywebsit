@@ -49,6 +49,10 @@ const Resume = ({profile, workExperience, schoolExperience, skills, references})
 
 const mapStateToProps = (state) =>{
     return{
+        dev: state.reducer.dev,
+        nationality: state.reducer.nationality,
+        number: state.reducer.number,
+        email: state.reducer.email,
         profile: state.reducer.profile,
         workExperience: state.reducer.workExperience,
         schoolExperience: state.reducer.schoolExperience,

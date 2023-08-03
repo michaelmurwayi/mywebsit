@@ -1,13 +1,9 @@
 import React from 'react'
 import './info.css'
+import { connect } from 'react-redux';
 
-const Info = () =>{
-    const firstname = 'Michael';
-    const secondname = 'Murwayi';
-    const nationality = 'Kenyan';
-    const number = '+254746256084';
-    const email = 'mikemurwayi7@gmail.com';
-
+const Info = ({dev, nationality, number, email}) =>{
+    
     return (
         <div className='info-card row'>
             <div className='info-card-image col-md-5'></div>
@@ -23,7 +19,7 @@ const Info = () =>{
                     <p>Email</p>
                 </div>
                 <div className='col-md-6'>
-                    <h6> {firstname} {secondname} </h6>
+                    <h6> {dev} </h6>
                     
                     <h6>{nationality}</h6>
                     
@@ -37,4 +33,13 @@ const Info = () =>{
     )
 } 
 
-export default Info
+const mapStateToProps = (state) =>{
+    return {
+        dev: state.reducer.dev,
+        nationality: state.reducer.nationality,
+        number: state.reducer.nationality,
+        email: state.reducer.email
+    }
+}
+
+export default connect(mapStateToProps)(Info)
