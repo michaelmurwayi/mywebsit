@@ -1,17 +1,22 @@
 import React from 'react'
+import { connect } from 'react-redux';
 
-
-const Footer = () =>{
-    const currentYear = new Date().getFullYear();
-    const company = "huncho Inc";
+const Footer = ({dev,year}) =>{
     return (
         <footer class="footer">
         <div class="container">
-            <p>&copy; {currentYear} {company}. All rights reserved.</p>
+            <p>&copy; {year} {dev}. All rights reserved.</p>
         </div>
         </footer>
 
     )
 }
 
-export default Footer
+const mapStateToProps = (state) =>{
+    return {
+        dev: state.reducer.dev,
+        year: state.reducer.currentYear
+    }
+}
+
+export default connect(mapStateToProps)(Footer)
