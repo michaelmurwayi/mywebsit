@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/mywebsit/static/css/main.bdb6cd40.css",
+    "main.js": "/mywebsit/static/js/main.40994c01.js",
+    "static/js/787.d3befce1.chunk.js": "/mywebsit/static/js/787.d3befce1.chunk.js",
+    "static/media/resume.pdf": "/mywebsit/static/media/resume.4ed4973c99cb7262a001.pdf",
+    "static/media/construction.jpg": "/mywebsit/static/media/construction.c5fcabd37f95c003b419.jpg",
+    "static/media/404.jpg": "/mywebsit/static/media/404.ea0f09f85e6ffcc5c2cd.jpg",
+    "index.html": "/mywebsit/index.html",
+    "main.bdb6cd40.css.map": "/mywebsit/static/css/main.bdb6cd40.css.map",
+    "main.40994c01.js.map": "/mywebsit/static/js/main.40994c01.js.map",
+    "787.d3befce1.chunk.js.map": "/mywebsit/static/js/787.d3befce1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bdb6cd40.css",
+    "static/js/main.40994c01.js"
+  ]
+}
