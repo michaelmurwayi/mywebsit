@@ -1,6 +1,7 @@
 import React from 'react'
 import './Nav.css'
 import { connect } from 'react-redux'
+import Button from './download_button/button'
 
 const Nav = ({dev}) => {
     return (
@@ -12,7 +13,7 @@ const Nav = ({dev}) => {
                     <a href="/" className="active">Home</a>
                     <a href="blog">Blog</a>
                     <a href="resume">Resume</a>
-                    <a ><button className='btn btn-sm btn-primary'>Download Resume</button></a>
+                    <Button/>
                     <a className="icon" >
                         <i className="fa fa-bars"></i>
                     </a>

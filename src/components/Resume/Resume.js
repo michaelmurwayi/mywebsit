@@ -10,7 +10,7 @@ import { connect } from 'react-redux'
 
 
 const Resume = ({profile, workExperience, schoolExperience, skills, references}) =>{
-    console.log(references)
+    
     return (
         <div className='resume-main'>
             <Nav/>
