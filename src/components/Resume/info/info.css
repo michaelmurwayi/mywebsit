@@ -1,5 +1,5 @@
 .info-card{
-    background-color: rgba(255, 255, 255);
+    background-color: rgb(10,28,52);
     position: absolute;
     top: 100px;
     left: 450px;
@@ -20,6 +20,7 @@
     /* background-color: grey; */
     height: inherit;
     width: max-content;
+    color: white;
 
 }
 

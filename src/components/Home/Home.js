@@ -1,9 +1,10 @@
 import React from 'react';
 import './Home.css';
 import Nav from '../Navigation/Nav'
+import { connect } from 'react-redux';
 
 
-const Home = () =>{
+const Home = ({dev, role, bio}) =>{
     return (
         <div className='main'>
             <Nav/>
@@ -17,16 +18,16 @@ const Home = () =>{
                     <div className='info'>
                         <div className='col'>
                             <p>Name</p>
-                            <h5>Michael Murwayi</h5>
+                            <h5>{dev}</h5>
                         </div>
 
                         <div className='col'>
                             <p>Role</p>
-                            <h5>Software Developer</h5>
+                            <h5>{role}</h5>
                         </div>
                         <div className='bio'>
                             <p>Bio</p>
-                            <span>As a code composer, I dance with algorithms, orchestrating symphonies of efficiency and functionality. With each keystroke, I strive to create clean, scalable, and maintainable software architectures, harnessing the power of cutting-edge technologies and frameworks.</span>
+                            <span>{bio}</span>
                         </div>
                     </div>
                 </div>
@@ -35,4 +36,12 @@ const Home = () =>{
     );
 };
 
-export default Home;
+const mapStateToProps = (state) =>{
+    return{
+        dev: state.reducer.dev,
+        role: state.reducer.role,
+        bio: state.reducer.bio
+    }
+}
+
+export default connect(mapStateToProps)(Home);

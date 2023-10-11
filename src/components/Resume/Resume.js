@@ -6,119 +6,11 @@ import Exp from './experience/exp'
 import Skill from './skills/skill'
 import Reference  from './reference/reference'
 import Footer from '../Footer/footer'
+import { connect } from 'react-redux'
 
-const Resume = () =>{
-    const schoolExperience = [{
-        school_name: 'Meru University of Science and Technology',
-        certification: 'Bachelor in Computer Technology',
-        start: '2016',
-        end: '2021'
-    },
-    {
-        school_name: 'Pioneer Group of Schools',
-        certification: 'High School Education Certificate (KSCE)',
-        start: '2012',
-        end: '2016'
-    },
-    {
-        school_name: 'Utawala Academy',
-        certification: 'Primary School Education Certificate (KCPE)',
-        start: '2008',
-        end: '2011'
-    }
-    ]
 
-    const WorkExperience = [{
-        company_name: 'Revolution Analytics, Nairobi (Kenya) ',
-        link: 'https://revolution-analytics.co.ke/',
-        position: '',
-        start: '2021 August',
-        end: '2023 May',
-        languages: ["Python", "Html", "CSS", "JS (Angular)", "PHP (Laravel)", "Mysql", "PowerBI", "Excel"],
-        desciption: 'I professionally worked as both Frontend and Backend developer.I also rotated to a data science project where i did both data collection ( web scrapping ) , data warehousing and data analysis. '
-    },
-    {
-        company_name: 'Zalisha Kenya , Kenyatta University (Kenya)',
-        link: 'https://www.zalishafrica.com/',
-        position: '',
-        start: '2021 August',
-        end: '2023 May',
-        languages: ["Html", "CSS", "MDBootrap", "Firebase", "JS(Vue.js)"],
-        desciption: 'My role mainly included frontend development. Mainly worked with material design bootstrap and vue js.I also learnt how to user firebase for authentication and data storage. '
-    },
-    {
-        company_name: 'Ona  , Nairobi (Kenya)',
-        link: 'https://ona.io',
-        position: '',
-        start: '2021 August',
-        end: '2023 May',
-        languages: ["Python", "Git", "Docker"],
-        desciption: ' I mainly maintained the Ona Data API which was written in python .I fixed issues that   arose in production .I got extensivly introduced to Django Rest API and writing system tests.We heavily relied on git for version control and  i also went through some deployment techniques with docker.'
-    },
-    ]
+const Resume = ({profile, workExperience, schoolExperience, skills, references}) =>{
     
-    const skills = [
-        {
-            name:"Html",
-            level: "Proficient"
-        },
-        {
-            name:"CSS",
-            level: "Proficient"
-        },
-        {
-            name:"Python",
-            level: "Intermediate"
-        },
-        {
-            name:"JavaScript",
-            level: "Intermediate"
-        },
-        {
-            name:"Mysql",
-            level: "Intermediate"
-        },
-        {
-            name:"Docker",
-            level: "Intermediate"
-        },
-        {
-            name:"Git",
-            level: "Intermediate"
-        },
-        {
-            name:"MongoDB",
-            level: "Beginner"
-        },
-        {
-            name:"PHP",
-            level: "Beginner"
-        },
-        {
-            name:"Cyber Security",
-            level: "Beginner"
-        }
-    ]
-
-    const references = [
-        {
-            src: "/images/ona.png",
-            name: "Dickson Ukanga",
-            number: "0724242424",
-            role: "CTO",
-            email: "ukangadickson@gmail.com"
-        },
-        {
-            src: "/images/zalisha.jpeg",
-            name: "Steve Kombo",
-            number: "0724242424",
-            role: "CEO",
-            email: "skombo@gmail.com"
-
-        },
-
-    ]
-
     return (
         <div className='resume-main'>
             <Nav/>
@@ -141,7 +33,7 @@ const Resume = () =>{
                 <div className='row'>
 
                 <div className='col-md-6 mt-5'>
-                    <Exp title="Work Experience" experience={WorkExperience}/>
+                    <Exp title="Work Experience" experience={workExperience}/>
                     <Exp title="School Experience" experience={schoolExperience}/>
                     </div>
                 <div className='col-md-6 mt-5'>
@@ -155,4 +47,18 @@ const Resume = () =>{
     )
 }
 
-export default Resume
+const mapStateToProps = (state) =>{
+    return{
+        dev: state.reducer.dev,
+        nationality: state.reducer.nationality,
+        number: state.reducer.number,
+        email: state.reducer.email,
+        profile: state.reducer.profile,
+        workExperience: state.reducer.workExperience,
+        schoolExperience: state.reducer.schoolExperience,
+        skills: state.reducer.skills,
+        references: state.reducer.references
+    }
+}
+
+export default connect(mapStateToProps)(Resume)
